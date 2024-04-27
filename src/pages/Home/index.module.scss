@@ -1,9 +1,11 @@
 @use "@styles/mixins.scss" as *;
 $top-wrapper-hg: 85%;
-$column-wd: 250px;
+$column-wd: 280px;
 
 .top-wrapper{
     display: grid;
+    gap: 0.5em;
+    padding: 0.5em;
     grid-template-columns: $column-wd minmax(300px, 1fr) $column-wd;
     flex-basis: $top-wrapper-hg;
     @include mq(960px){

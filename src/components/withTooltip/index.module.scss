@@ -1,0 +1,46 @@
+@mixin tooltip-left{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 105%;
+    margin-left: 10px;
+}
+
+$bg-tooltip: rgba(89, 89, 89, 1);
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+    & .tooltiptext {
+        visibility: hidden;
+        width: 150px;
+        font-size: 0.8rem;
+        // opacity: 0;
+        // transition: opacity 250ms ease-in-out;
+        background-color: $bg-tooltip;
+        color: #fff;
+        text-align: center;
+        padding: 0.2em 0.4em;
+        border-radius: 6px;
+        @include tooltip-left;
+    
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            right: 100%; /* To the left of the tooltip */
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent $bg-tooltip transparent transparent;
+        }
+    }
+    &:hover .tooltiptext {
+        // opacity: 1;
+        visibility: visible;
+    }
+}

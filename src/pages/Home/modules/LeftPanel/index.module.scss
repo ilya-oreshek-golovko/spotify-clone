@@ -1,5 +1,38 @@
 @use "@styles/mixins.scss" as *; 
 
 .panel-wrapper{
-    @include panel-default;
+    height: 100%;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+@mixin btnLink{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 0.5em;
+}
+@mixin btnHover{
+    color: var(--text-secondary);
+    cursor: pointer;
+    &:hover{
+        color: var(--text-primary);
+    }
+}
+
+%btn-default{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+    @include btnHover;
+    & > a{
+        @include btnLink;
+        color: inherit;
+    }
+    %btn-icon{
+        font-size: 1.2rem;
+    }
 }

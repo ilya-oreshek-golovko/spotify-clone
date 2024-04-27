@@ -1,7 +1,7 @@
 @mixin panel-default {
-    height: 100%;
-    background-color: black;
+    background-color: var(--bg-secondary);
     border-radius: 0.8em;
+    padding: 0.8em;
 }
 @mixin mq($width){
     @media screen and (max-width: $width){

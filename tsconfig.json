@@ -23,7 +23,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@pages/*": ["./src/pages/*"],
-      "@styles/*": ["./src/styles/*"]
+      "@styles/*": ["./src/styles/*"],
+      "@home/*": ["./src/pages/Home/*"]
     }
   },
   "include": [

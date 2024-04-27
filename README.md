@@ -7,3 +7,12 @@ https://nimishjn.medium.com/toggle-theme-in-reactjs-4095dd35c69d
 
 # why we cannot use scss variables for theme toggling
 https://stackoverflow.com/questions/60456346/how-to-set-light-and-dark-modes-with-scss-variables
+
+# how to extend scss classes
+https://sass-scss.ru/guide/
+
+# compose keyword using in CSS modules
+https://blog.logrocket.com/a-deep-dive-into-css-modules/
+
+# set up tooltip
+https://www.w3schools.com/css/css_tooltip.asp

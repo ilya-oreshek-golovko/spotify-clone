@@ -3,7 +3,7 @@ import { IThemeContext } from "./types";
 
 const initialValue : IThemeContext = {
     state: {
-        theme : "light-mode"
+        theme : "dark-mode"
     }, 
     actions : {
         toggleTheme: () => {}

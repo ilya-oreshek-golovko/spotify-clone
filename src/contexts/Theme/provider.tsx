@@ -6,7 +6,7 @@ const ThemeProvider = ({children} : {children : any}) => {
 
     const THEME_KEY = useMemo(() => "GIV-SPOTIFY-MODE", []);
     const initialValue = function() : Themes{
-        return localStorage.getItem(THEME_KEY) as Themes || "light-mode";
+        return localStorage.getItem(THEME_KEY) as Themes || "dark-mode";
     };
 
     const [theme, setTheme] = useState<Themes>(initialValue);

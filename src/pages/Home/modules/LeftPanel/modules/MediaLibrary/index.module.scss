@@ -1,0 +1,70 @@
+@use "@styles/mixins.scss" as *; 
+@use "@home/modules/LeftPanel/index.module.scss" as *;
+
+.main-panel{
+    @include panel-default;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+
+    .media-library{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .btn{
+            @extend %btn-default;
+            .btn-icon{
+                @extend %btn-icon;
+            }
+        }
+        .btn-actions{
+            margin-left: auto;
+            & > * + *{
+                margin-left: 0.3em;
+            }
+            .btn-icon{
+                transition: all 250ms ease-in-out;
+                padding: 0.5em;
+                border-radius: 50%;
+            
+                @include btnHover;
+                &:hover{
+                    background-color: rgb(51, 51, 51, 0.4);
+                }
+            }
+        }
+    }
+
+    .action-btn-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn-search{
+            transition: all 250ms ease-in-out;
+            padding: 0.5em;
+            border-radius: 50%;
+        
+            @include btnHover;
+            &:hover{
+                background-color: rgb(51, 51, 51, 0.4);
+            }
+        }
+        .btn{
+            @extend %btn-default;
+            font-size: 0.9rem;
+            grid-column: 0.5em;
+            .btn-icon{
+                @extend %btn-icon;
+                margin-left: 0.3em;
+            }
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+    }
+    // .playlists{
+    //     flex: 1;
+    //     background-color: red;
+    // }
+}

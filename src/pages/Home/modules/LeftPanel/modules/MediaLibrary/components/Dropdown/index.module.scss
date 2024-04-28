@@ -1,0 +1,35 @@
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+
+    width: 200px;
+    border-radius: 10px;
+    color: var(--text-primary);
+    background-color: var(--bg-thirdy);
+
+    .group-name{
+        font-size: 0.6rem;
+        padding: 1.2em;
+        .group-options{
+            margin-top: 1.5em;
+            font-size: 0.9rem;
+
+            & > * + *{
+                margin-top: 1em;
+            }
+            .group-option{
+                display: flex;
+                align-items: center;
+            }
+            .group-img{
+                font-size: 1.5rem;
+                margin-right: 0.3em;
+            }
+        }
+    }
+}
+hr{
+    height: 0.5px;
+    background-color: rgba(0,0,0,0.2);
+}

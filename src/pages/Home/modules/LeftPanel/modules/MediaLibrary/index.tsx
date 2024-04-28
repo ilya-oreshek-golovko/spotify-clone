@@ -2,10 +2,29 @@ import styles from "./index.module.scss";
 import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
 import { FaPlus, FaArrowRight, FaMusic  } from "react-icons/fa";
 import { CiSearch, CiCircleList } from "react-icons/ci";
-import { GiPin } from "react-icons/gi";
 import WithTooltip from "@/components/withTooltip/index";
+import Playlist from "./components/Playlist";
+import { useState } from "react";
+import { useDrowdown } from "./hooks";
 
 export default function MediaLibrary() {
+  const {
+    handleDropdown,
+    ShowDropdown,
+    dropdownRef
+  } = useDrowdown();
+  const [down, setDown] = useState(false);
+
+  const RecentlyListened = () => {
+    const buttonStyle = styles["btn"] + (down ? ` ${styles["mousedown"]}` : ` ${styles["mouseup"]}`);
+    return(
+      <div className={buttonStyle} ref={dropdownRef} onClick={handleDropdown} onMouseDown={() => setDown(true)} onMouseUp={() => setDown(false)}>
+        Недавно прослушано
+        <CiCircleList className={styles["btn-icon"] + (down ? ` ${styles["mousedown"]}` : "")} onClick={handleDropdown} />
+      </div>
+    )
+  }
+
   return (
     <section className={styles["main-panel"]}>
         
@@ -31,16 +50,11 @@ export default function MediaLibrary() {
         <WithTooltip tooltop="Искать в медиатеке">
           <CiSearch className={styles["btn-search"]}/>
         </WithTooltip>
-        <div className={styles["btn"]}>
-          Недавно прослушано
-          <CiCircleList className={styles["btn-icon"]} />
-        </div>       
+        <RecentlyListened />
+        <ShowDropdown/>
       </div>
 
-      <div className={styles["playlist-wrapper"]}>
-        <div className="playlist-card"></div>
-      </div>
-
+      <Playlist />
     </section>
   )
 }

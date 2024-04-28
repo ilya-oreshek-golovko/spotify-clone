@@ -35,6 +35,9 @@
     
     --bg-secondary-light: rgb(212, 212, 212);
     --bg-secondary-dark: rgb(34, 34, 34);
+
+    --bg-thirdy-dark: rgba(51,51,51,1);
+    --bg-thirdy-light: red;
 }
 
 
@@ -43,6 +46,7 @@
     --text-secondary: var(--text-secondary-light);
     --bg-primary: var(--bg-primary-light);
     --bg-secondary: var(--bg-secondary-light);
+    --bg-thirdy: var(--bg-thirdy-light);
 }
 
 .dark-mode{
@@ -50,4 +54,5 @@
     --text-secondary: var(--text-secondary-dark);
     --bg-primary: var(--bg-primary-dark);
     --bg-secondary: var(--bg-secondary-dark);
+    --bg-thirdy: var(--bg-thirdy-dark);
 }

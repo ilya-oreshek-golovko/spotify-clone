@@ -7,6 +7,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <ThemeProvider>
-      <App />
+    <App />
   </ThemeProvider>
 );

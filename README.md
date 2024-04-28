@@ -16,3 +16,10 @@ https://blog.logrocket.com/a-deep-dive-into-css-modules/
 
 # set up tooltip
 https://www.w3schools.com/css/css_tooltip.asp
+
+# ul tag for dropdown and Css drodown
+https://www.w3schools.com/tags/tag_ul.asp
+https://www.w3schools.com/css/css_dropdowns.asp
+
+# event bubbling
+https://learn.javascript.ru/event-bubbling

@@ -7,6 +7,7 @@ module.exports = {
         '@pages': path.resolve(__dirname, 'src', 'pages'),
         '@styles': path.resolve(__dirname, 'src', 'styles'),
         '@home': path.resolve(__dirname, 'src', 'pages', 'Home'),
+        '@home-leftpanel': path.resolve(__dirname, 'src', 'pages', 'Home', 'modules', 'LeftPanel'),
     },
   },
 };

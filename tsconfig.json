@@ -24,7 +24,8 @@
       "@/*": ["./src/*"],
       "@pages/*": ["./src/pages/*"],
       "@styles/*": ["./src/styles/*"],
-      "@home/*": ["./src/pages/Home/*"]
+      "@home/*": ["./src/pages/Home/*"],
+      "@home-leftpanel/*": ["./src/pages/Home/modules/LeftPanel/*"],
     }
   },
   "include": [

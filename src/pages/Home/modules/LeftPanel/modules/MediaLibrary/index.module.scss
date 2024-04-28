@@ -40,6 +40,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
         .btn-search{
             transition: all 250ms ease-in-out;
             padding: 0.5em;
@@ -52,8 +53,9 @@
         }
         .btn{
             @extend %btn-default;
-            font-size: 0.9rem;
             grid-column: 0.5em;
+            transition: none;
+
             .btn-icon{
                 @extend %btn-icon;
                 margin-left: 0.3em;
@@ -62,9 +64,12 @@
                 transform: scale(1.02);
             }
         }
+        .mouseup{
+            font-size: 0.9rem;
+        }
+        .mousedown{
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
     }
-    // .playlists{
-    //     flex: 1;
-    //     background-color: red;
-    // }
 }

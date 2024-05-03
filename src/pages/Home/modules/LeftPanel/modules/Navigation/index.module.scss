@@ -3,8 +3,7 @@
 
 .top-panel{
     @include panel-default;
-    flex-basis: min(120px, 30%);
-
+    height: 150px;
     display: flex;
     flex-direction: column;
 

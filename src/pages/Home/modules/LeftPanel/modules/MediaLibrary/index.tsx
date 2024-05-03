@@ -14,16 +14,7 @@ export default function MediaLibrary() {
     dropdownRef
   } = useDrowdown();
   const [down, setDown] = useState(false);
-
-  const RecentlyListened = () => {
-    const buttonStyle = styles["btn"] + (down ? ` ${styles["mousedown"]}` : ` ${styles["mouseup"]}`);
-    return(
-      <div className={buttonStyle} ref={dropdownRef} onClick={handleDropdown} onMouseDown={() => setDown(true)} onMouseUp={() => setDown(false)}>
-        Недавно прослушано
-        <CiCircleList className={styles["btn-icon"] + (down ? ` ${styles["mousedown"]}` : "")} onClick={handleDropdown} />
-      </div>
-    )
-  }
+  const buttonStyle = styles["btn"] + (down ? ` ${styles["mousedown"]}` : ` ${styles["mouseup"]}`);
 
   return (
     <section className={styles["main-panel"]}>
@@ -50,7 +41,10 @@ export default function MediaLibrary() {
         <WithTooltip tooltop="Искать в медиатеке">
           <CiSearch className={styles["btn-search"]}/>
         </WithTooltip>
-        <RecentlyListened />
+        <div className={buttonStyle} ref={dropdownRef} onClick={handleDropdown} onMouseDown={() => setDown(true)} onMouseUp={() => setDown(false)}>
+          Недавно прослушано
+          <CiCircleList className={styles["btn-icon"] + (down ? ` ${styles["mousedown"]}` : "")} onClick={handleDropdown} />
+        </div>
         <ShowDropdown/>
       </div>
 

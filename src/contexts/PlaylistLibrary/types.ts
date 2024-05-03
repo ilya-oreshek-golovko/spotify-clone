@@ -1,14 +1,31 @@
 type TLibraryFormat = "grid" | "compact" | "standard";
+type TSortingType = "recentlyListened" | "recentlyAdded" | "alphabetically" | "author";
+type PlayListContextState = {
+    libraryFormat: TLibraryFormat,
+    sortingType: TSortingType
+}
+
+type PlayListContextActions = {
+    type : "toggleLibraryFormat",
+    payload: TLibraryFormat
+} | {
+    type: "toggleSortingType",
+    payload: TSortingType
+};
+
 type IPlayListContext = {
     state:{
-        libraryFormat: TLibraryFormat
+        libraryFormat: TLibraryFormat,
+        sortingType: TSortingType
     },
-    actions:{
-        setLibraryFormat: (newFormat : TLibraryFormat) => void
-    }
+    dispatch: React.Dispatch<PlayListContextActions>
 }
 
 export type{
     TLibraryFormat,
-    IPlayListContext
+    TSortingType,
+    IPlayListContext,
+
+    PlayListContextState,
+    PlayListContextActions
 }

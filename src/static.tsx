@@ -42,6 +42,156 @@ const responseTest : IGetPlaylists = {
         "collaborative": false,
         "description": "",
         "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/5xbz3IDohIFVcFef515DHK"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5xbz3IDohIFVcFef515DHK",
+        "id": "5xbz3IDohIFVcFef515DHK",
+        "images": null,
+        "name": "Мой плейлист № 11",
+        "owner": {
+          "display_name": "igolovko",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31b3ny25y3oofj2rzrpjl3iw2u2i"
+          },
+          "href": "https://api.spotify.com/v1/users/31b3ny25y3oofj2rzrpjl3iw2u2i",
+          "id": "31b3ny25y3oofj2rzrpjl3iw2u2i",
+          "type": "user",
+          "uri": "spotify:user:31b3ny25y3oofj2rzrpjl3iw2u2i"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MSw1ZWNlYWYzYjA0ZTdjNjhjMDY2MGIwMjAxOTkwM2FlODA3OTA5NjJi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/5xbz3IDohIFVcFef515DHK/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5xbz3IDohIFVcFef515DHK"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/5xbz3IDohIFVcFef515DHK"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5xbz3IDohIFVcFef515DHK",
+        "id": "5xbz3IDohIFVcFef515DHK",
+        "images": null,
+        "name": "Мой плейлист № 11",
+        "owner": {
+          "display_name": "igolovko",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31b3ny25y3oofj2rzrpjl3iw2u2i"
+          },
+          "href": "https://api.spotify.com/v1/users/31b3ny25y3oofj2rzrpjl3iw2u2i",
+          "id": "31b3ny25y3oofj2rzrpjl3iw2u2i",
+          "type": "user",
+          "uri": "spotify:user:31b3ny25y3oofj2rzrpjl3iw2u2i"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MSw1ZWNlYWYzYjA0ZTdjNjhjMDY2MGIwMjAxOTkwM2FlODA3OTA5NjJi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/5xbz3IDohIFVcFef515DHK/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5xbz3IDohIFVcFef515DHK"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/5xbz3IDohIFVcFef515DHK"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5xbz3IDohIFVcFef515DHK",
+        "id": "5xbz3IDohIFVcFef515DHK",
+        "images": null,
+        "name": "Мой плейлист № 11",
+        "owner": {
+          "display_name": "igolovko",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31b3ny25y3oofj2rzrpjl3iw2u2i"
+          },
+          "href": "https://api.spotify.com/v1/users/31b3ny25y3oofj2rzrpjl3iw2u2i",
+          "id": "31b3ny25y3oofj2rzrpjl3iw2u2i",
+          "type": "user",
+          "uri": "spotify:user:31b3ny25y3oofj2rzrpjl3iw2u2i"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MSw1ZWNlYWYzYjA0ZTdjNjhjMDY2MGIwMjAxOTkwM2FlODA3OTA5NjJi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/5xbz3IDohIFVcFef515DHK/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5xbz3IDohIFVcFef515DHK"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/5xbz3IDohIFVcFef515DHK"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5xbz3IDohIFVcFef515DHK",
+        "id": "5xbz3IDohIFVcFef515DHK",
+        "images": null,
+        "name": "Мой плейлист № 11",
+        "owner": {
+          "display_name": "igolovko",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31b3ny25y3oofj2rzrpjl3iw2u2i"
+          },
+          "href": "https://api.spotify.com/v1/users/31b3ny25y3oofj2rzrpjl3iw2u2i",
+          "id": "31b3ny25y3oofj2rzrpjl3iw2u2i",
+          "type": "user",
+          "uri": "spotify:user:31b3ny25y3oofj2rzrpjl3iw2u2i"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MSw1ZWNlYWYzYjA0ZTdjNjhjMDY2MGIwMjAxOTkwM2FlODA3OTA5NjJi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/5xbz3IDohIFVcFef515DHK/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5xbz3IDohIFVcFef515DHK"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/5xbz3IDohIFVcFef515DHK"
+        },
+        "href": "https://api.spotify.com/v1/playlists/5xbz3IDohIFVcFef515DHK",
+        "id": "5xbz3IDohIFVcFef515DHK",
+        "images": null,
+        "name": "Мой плейлист № 11",
+        "owner": {
+          "display_name": "igolovko",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/31b3ny25y3oofj2rzrpjl3iw2u2i"
+          },
+          "href": "https://api.spotify.com/v1/users/31b3ny25y3oofj2rzrpjl3iw2u2i",
+          "id": "31b3ny25y3oofj2rzrpjl3iw2u2i",
+          "type": "user",
+          "uri": "spotify:user:31b3ny25y3oofj2rzrpjl3iw2u2i"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MSw1ZWNlYWYzYjA0ZTdjNjhjMDY2MGIwMjAxOTkwM2FlODA3OTA5NjJi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/5xbz3IDohIFVcFef515DHK/tracks",
+          "total": 0
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:5xbz3IDohIFVcFef515DHK"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
           "spotify": "https://open.spotify.com/playlist/5inA457RBXuIrXHNZxIosx"
         },
         "href": "https://api.spotify.com/v1/playlists/5inA457RBXuIrXHNZxIosx",

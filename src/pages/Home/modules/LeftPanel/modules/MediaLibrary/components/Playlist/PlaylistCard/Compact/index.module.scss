@@ -1,3 +1,16 @@
 .card{
-    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(0,0,0,0.3);
+    }
+}
+.title{
+    &::after{
+        content: "Плейлист";
+        color: var(--text-secondary);
+        margin-left: 1em;
+        font-size: 0.8rem;
+    }
 }

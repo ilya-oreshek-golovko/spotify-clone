@@ -21,15 +21,29 @@
             .group-option{
                 display: flex;
                 align-items: center;
+                &:hover{
+                    cursor: pointer;
+                }
+                
+                .group-img{
+                    font-size: 1.5rem;
+                    margin-right: 0.3em;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .group-img-check{
+                    margin-left: auto;
+                    font-size: 1.1rem;
+                }
             }
-            .group-img{
-                font-size: 1.5rem;
-                margin-right: 0.3em;
+            .selected{
+                color: var(--primary-positive);
             }
         }
     }
 }
 hr{
     height: 0.5px;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(128,128,128, 0.5);
 }

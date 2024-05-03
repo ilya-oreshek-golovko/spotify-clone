@@ -3,11 +3,10 @@ import { IPlayListContext } from "./types";
 
 const initialState : IPlayListContext = {
     state:{
-        libraryFormat: "standard"
+        libraryFormat: "compact",
+        sortingType: "recentlyListened"
     },
-    actions:{
-        setLibraryFormat: () => {}
-    }
+    dispatch: () => {}
 };
 
 const PlaylistContext = createContext(initialState);

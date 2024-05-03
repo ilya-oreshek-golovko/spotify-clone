@@ -1,3 +1,6 @@
+# Spotify API
+https://developer.spotify.com/documentation/web-api/reference/get-list-users-playlists
+
 # set up aliases for CRA
 https://stackoverflow.com/questions/63067555/how-to-make-an-import-shortcut-alias-in-create-react-app
 
@@ -23,3 +26,12 @@ https://www.w3schools.com/css/css_dropdowns.asp
 
 # event bubbling
 https://learn.javascript.ru/event-bubbling
+
+# custom scrollbar
+https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+
+# transition for scrollbar using additional elements
+https://stackoverflow.com/questions/19230289/use-transition-on-webkit-scrollbar
+
+# dynamic grid
+https://dev.to/musselmanth/the-dynamic-css-grid-configuration-ive-been-looking-for-1ogd

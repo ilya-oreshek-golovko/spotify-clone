@@ -5,33 +5,45 @@ import { IPlaylist } from "@/types";
 import responseTest from "@/static";
 import Compact from "./PlaylistCard/Compact";
 import Standard from "./PlaylistCard/Standard";
-import { useCallback, useMemo } from "react";
+import { useCallback } from "react";
 
 function usePlaylistManagement(){
     const {libraryFormat} = usePlaylistState();
-    const listStyle = useMemo(() => styles["playlist-wrapper"] + ` ${styles[libraryFormat]}`, [libraryFormat]);
   
     const List = useCallback(() => {
+        console.log(libraryFormat);
         switch(libraryFormat){
             case "grid":{
                 return(
+                    <>
+                    {
                     responseTest.items.map((playlist : IPlaylist) => {
                         return <Grid playlist={playlist}/>;
                     })
+                    }
+                    </>
                 )
             }
             case "compact":{
                 return(
-                    responseTest.items.map((playlist : IPlaylist) => {
-                        return <Compact playlist={playlist}/>;
-                    })
+                    <>
+                    {
+                        responseTest.items.map((playlist : IPlaylist) => {
+                            return <Compact playlist={playlist}/>;
+                        })
+                    }
+                    </>
                 )
             }
             case "standard":{
                 return(
+                    <>
+                    {
                     responseTest.items.map((playlist : IPlaylist) => {
                         return <Standard playlist={playlist}/>;
                     })
+                    }
+                    </>
                 )
             }
         }
@@ -39,7 +51,7 @@ function usePlaylistManagement(){
 
     return{
         List,
-        listStyle
+        listStyle : styles[libraryFormat]
     }
 }
 

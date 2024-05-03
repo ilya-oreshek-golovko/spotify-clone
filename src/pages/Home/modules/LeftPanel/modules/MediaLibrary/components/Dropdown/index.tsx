@@ -1,8 +1,10 @@
 import styles from "./index.module.scss";
 import { BsList } from "react-icons/bs";
 import { CiCircleList, CiGrid41 } from "react-icons/ci";
+import LibraryFormatButton from "./components/LibraryFormatButton";
 
 export default function Dropdown() {
+
   return (
     <ul className={styles["dropdown"]}>
 
@@ -20,15 +22,9 @@ export default function Dropdown() {
         <li className={styles["group-name"]}>
             Формат библиотеки
             <ul className={styles["group-options"]}>
-                <li className={styles["group-option"]}>
-                    <BsList className={styles["group-img"]}/> Компактный
-                </li>
-                <li className={styles["group-option"]}>
-                    <CiCircleList className={styles["group-img"]}/> Список
-                </li>
-                <li className={styles["group-option"]}> 
-                    <CiGrid41 className={styles["group-img"]}/> Сетка
-                </li>
+                <LibraryFormatButton title="Компактный" styles={styles} libraryType="compact" ListIcon={BsList}/>
+                <LibraryFormatButton title="Список" styles={styles} libraryType="standard" ListIcon={CiCircleList}/>
+                <LibraryFormatButton title="Сетка" styles={styles} libraryType="grid" ListIcon={CiGrid41}/>
             </ul>
         </li>
         

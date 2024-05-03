@@ -1,12 +1,13 @@
 @use "@styles/mixins.scss" as *;
-$top-wrapper-hg: 85%;
+$top-wrapper-hg: 90%;
 $column-wd: 280px;
 
 .top-wrapper{
     display: grid;
+    overflow: hidden;
     gap: 0.5em;
     padding: 0.5em;
-    grid-template-columns: $column-wd minmax(300px, 1fr) $column-wd;
+    grid-template-columns: 400px minmax(300px, 1fr) $column-wd;
     flex-basis: $top-wrapper-hg;
     @include mq(960px){
         grid-template-columns: 75px minmax(300px, 1fr) $column-wd;
@@ -16,8 +17,9 @@ $column-wd: 280px;
     flex-basis: calc(100% - $top-wrapper-hg);
 }
 .main-wrapper{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: var(--bg-primary);
+    color: white;
 }

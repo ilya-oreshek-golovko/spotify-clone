@@ -1,3 +1,36 @@
-.playlist-wrapper{
-    
+%playlist-wrapper{
+    display: grid;
+    overflow: hidden;
+    height: 80%;
+
+    &:hover, &:active, &:focus{
+        overflow: auto;
+    }
+    &::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--text-secondary);
+        border-radius: 4px;
+    }
+}
+.compact{
+    @extend %playlist-wrapper;
+    grid-auto-rows: 35px;
+    grid-template-columns: 1fr;
+}
+.standard{
+    @extend %playlist-wrapper;
+    grid-auto-rows: 64px;
+    grid-template-columns: 1fr;
+}
+.grid{
+    @extend %playlist-wrapper;
+    $card-size: max(64px, calc(2.2 * 1vw));
+
+    grid-template-rows: $card-size;
+    grid-template-columns: repeat(auto-fit, minmax($card-size, 1fr));
+    grid-auto-rows: $card-size;
+    gap: 10px;
 }

@@ -12,13 +12,13 @@ export default function Standard({playlist} : TGridCardProps) {
       <div className={styles["img-wrapper"]}>
         {
           images 
-          ? <img src={images[0].url} alt={playlistName} />
+          ? <img className={styles["img-target"]} src={images[0].url} alt={playlistName} />
           : <FiMusic className={styles["img-default"]}/>
         }
       </div>
       <div className={styles["content-wrapper"]}>
-        <p>{playlistName}</p>
-        <p>{owner.display_name}</p>
+        <p className={styles["title"]}>{playlistName}</p>
+        <p className={styles["description"]}>{`Плейлист ${owner.display_name}`}</p>
       </div>
     </article>
   )

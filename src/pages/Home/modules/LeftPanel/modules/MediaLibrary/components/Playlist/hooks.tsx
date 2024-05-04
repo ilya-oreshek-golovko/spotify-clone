@@ -11,14 +11,13 @@ function usePlaylistManagement(){
     const {libraryFormat} = usePlaylistState();
   
     const List = useCallback(() => {
-        console.log(libraryFormat);
         switch(libraryFormat){
             case "grid":{
                 return(
                     <>
                     {
                     responseTest.items.map((playlist : IPlaylist) => {
-                        return <Grid playlist={playlist}/>;
+                        return <Grid key={playlist.id} playlist={playlist}/>;
                     })
                     }
                     </>
@@ -29,7 +28,7 @@ function usePlaylistManagement(){
                     <>
                     {
                         responseTest.items.map((playlist : IPlaylist) => {
-                            return <Compact playlist={playlist}/>;
+                            return <Compact key={playlist.id} playlist={playlist}/>;
                         })
                     }
                     </>
@@ -40,7 +39,7 @@ function usePlaylistManagement(){
                     <>
                     {
                     responseTest.items.map((playlist : IPlaylist) => {
-                        return <Standard playlist={playlist}/>;
+                        return <Standard key={playlist.id} playlist={playlist}/>;
                     })
                     }
                     </>

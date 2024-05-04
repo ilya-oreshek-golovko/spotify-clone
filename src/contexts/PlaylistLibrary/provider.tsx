@@ -6,17 +6,10 @@ import reducer from "./reducer";
 
 function PlaylistContextProvider({children} : DefaultProps){
 
-    // const [libraryFormat, setLibraryFormat] = useState<TLibraryFormat>("compact");
-    // const [sortingType, setSortingType] = useState<TLibraryFormat>("compact");
-
     const [state, dispatch] = useReducer(reducer, {
         libraryFormat: "grid",
-        sortingType: "author"
+        sortingType: "recentlyListened"
     });
-
-    // const toggleLibraryFormat = useCallback((newFormat : TLibraryFormat) => {
-    //     setLibraryFormat(newFormat);
-    // }, []);
 
     const contextValue : IPlayListContext = {
         state,

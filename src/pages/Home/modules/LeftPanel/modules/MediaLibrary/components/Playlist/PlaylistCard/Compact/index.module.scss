@@ -1,10 +1,7 @@
+@use "@left-playlist/index.module.scss" as *;
+
 .card{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    &:hover{
-        background-color: rgba(0,0,0,0.3);
-    }
+    @extend %card-default;
 }
 .title{
     &::after{

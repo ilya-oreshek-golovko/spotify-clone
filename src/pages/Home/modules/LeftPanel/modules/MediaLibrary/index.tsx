@@ -1,17 +1,16 @@
 import styles from "./index.module.scss";
 import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
-import { FaPlus, FaArrowRight, FaMusic  } from "react-icons/fa";
+import { FaPlus, FaArrowRight  } from "react-icons/fa";
 import { CiSearch, CiCircleList } from "react-icons/ci";
 import WithTooltip from "@/components/withTooltip/index";
 import Playlist from "./components/Playlist";
 import { useState } from "react";
-import { useDrowdown } from "./hooks";
+import { useDrowdown } from "./components/Dropdown/hooks";
 
 export default function MediaLibrary() {
   const {
-    handleDropdown,
     ShowDropdown,
-    dropdownRef
+    toggleBtnRef
   } = useDrowdown();
   const [down, setDown] = useState(false);
   const buttonStyle = styles["btn"] + (down ? ` ${styles["mousedown"]}` : ` ${styles["mouseup"]}`);
@@ -41,9 +40,9 @@ export default function MediaLibrary() {
         <WithTooltip tooltop="Искать в медиатеке">
           <CiSearch className={styles["btn-search"]}/>
         </WithTooltip>
-        <div className={buttonStyle} ref={dropdownRef} onClick={handleDropdown} onMouseDown={() => setDown(true)} onMouseUp={() => setDown(false)}>
+        <div className={buttonStyle} ref={toggleBtnRef}>
           Недавно прослушано
-          <CiCircleList className={styles["btn-icon"] + (down ? ` ${styles["mousedown"]}` : "")} onClick={handleDropdown} />
+          <CiCircleList className={styles["btn-icon"] + (down ? ` ${styles["mousedown"]}` : "")}  />
         </div>
         <ShowDropdown/>
       </div>

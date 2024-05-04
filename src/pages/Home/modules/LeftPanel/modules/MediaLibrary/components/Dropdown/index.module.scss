@@ -1,28 +1,31 @@
 .dropdown{
     position: absolute;
     top: 100%;
-    left: 25%;
+    left: 45%;
 
     width: 200px;
-    border-radius: 10px;
+    border-radius: 3px;
     color: var(--text-primary);
     background-color: var(--bg-thirdy);
 
-    .group-name{
+    .group{
         font-size: 0.6rem;
-        padding: 1.2em;
+        padding: 4px;
+        .group-title{
+            padding: 16px 8px 12px 8px;
+        }
         .group-options{
-            margin-top: 1.5em;
             font-size: 0.9rem;
 
-            & > * + *{
-                margin-top: 1em;
-            }
+            // & > * + *{
+            //     margin-top: 1em;
+            // }
             .group-option{
                 display: flex;
                 align-items: center;
+                padding: 12px 8px;
                 &:hover{
-                    cursor: pointer;
+                    background-color: rgba(128,128,128, 0.5);
                 }
                 
                 .group-img{

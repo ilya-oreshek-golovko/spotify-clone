@@ -2,10 +2,10 @@ import { useContext } from "react";
 import PlaylistContext from "./context";
 
 
-export function usePlaylistActions(){
+export function usePlaylistDispatch(){
     const contextVal = useContext(PlaylistContext);
 
-    return contextVal.actions
+    return contextVal.dispatch;
 }
 
 export function usePlaylistState(){

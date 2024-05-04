@@ -8,6 +8,7 @@ module.exports = {
         '@styles': path.resolve(__dirname, 'src', 'styles'),
         '@home': path.resolve(__dirname, 'src', 'pages', 'Home'),
         '@home-leftpanel': path.resolve(__dirname, 'src', 'pages', 'Home', 'modules', 'LeftPanel'),
+        '@left-playlist': path.resolve(__dirname, 'src', 'pages', 'Home', 'modules', 'LeftPanel', 'modules', 'MediaLibrary', 'components', 'Playlist'),
     },
   },
 };

@@ -35,3 +35,6 @@ https://stackoverflow.com/questions/19230289/use-transition-on-webkit-scrollbar
 
 # dynamic grid
 https://dev.to/musselmanth/the-dynamic-css-grid-configuration-ive-been-looking-for-1ogd
+
+# memo 
+https://dmitripavlutin.com/use-react-memo-wisely/

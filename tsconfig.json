@@ -26,6 +26,7 @@
       "@styles/*": ["./src/styles/*"],
       "@home/*": ["./src/pages/Home/*"],
       "@home-leftpanel/*": ["./src/pages/Home/modules/LeftPanel/*"],
+      "@left-playlist/*": ["./src/pages/Home/modules/LeftPanel/modules/MediaLibrary/components/Playlist/*"],
     }
   },
   "include": [

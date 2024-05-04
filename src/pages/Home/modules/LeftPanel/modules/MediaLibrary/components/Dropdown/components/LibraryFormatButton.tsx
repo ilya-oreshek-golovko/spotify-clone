@@ -1,7 +1,8 @@
 import { TLibraryFormat } from '@/contexts/PlaylistLibrary/types';
-import { usePlaylistActions, usePlaylistState } from '@/contexts/PlaylistLibrary/use';
+import { usePlaylistDispatch, usePlaylistState } from '@/contexts/PlaylistLibrary/use';
 import { FaCheck } from "react-icons/fa";
 import { IconType } from 'react-icons';
+import { memo } from 'react';
 
 type LibraryFormatButtonProps = {
     styles : any,
@@ -11,8 +12,7 @@ type LibraryFormatButtonProps = {
 }
 
 export default function LibraryFormatButton({styles, libraryType, title, ListIcon} : LibraryFormatButtonProps) {
-
-    const {setLibraryFormat} = usePlaylistActions();
+    const dispatch = usePlaylistDispatch();
     const {libraryFormat : currentLibraryFormat} = usePlaylistState();
 
     const getGroupStyles = () => {
@@ -20,7 +20,7 @@ export default function LibraryFormatButton({styles, libraryType, title, ListIco
     }
 
     return (
-        <li className={getGroupStyles()} onClick={() => setLibraryFormat(libraryType)}>
+        <li className={getGroupStyles()} onClick={() => dispatch({type: "toggleLibraryFormat", payload: libraryType})}>
             <ListIcon className={styles["group-img"]} /> 
             {title}
             {
@@ -29,3 +29,4 @@ export default function LibraryFormatButton({styles, libraryType, title, ListIco
         </li>
     )
 }
+

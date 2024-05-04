@@ -15,6 +15,17 @@
         border-radius: 4px;
     }
 }
+%card-default{
+    padding-left: 0.5rem;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    &:hover{
+        background-color: rgba(0,0,0,0.3);
+    }
+}
 .compact{
     @extend %playlist-wrapper;
     grid-auto-rows: 35px;

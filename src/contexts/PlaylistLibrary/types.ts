@@ -1,5 +1,5 @@
 type TLibraryFormat = "grid" | "compact" | "standard";
-type TSortingType = "recentlyListened" | "recentlyAdded" | "alphabetically" | "author";
+type TSortingType = "recentlyListened" | "recentlyAdded" | "alphabetically" | "author" | "custom";
 type PlayListContextState = {
     libraryFormat: TLibraryFormat,
     sortingType: TSortingType

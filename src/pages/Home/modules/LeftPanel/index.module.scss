@@ -2,8 +2,8 @@
 
 .panel-wrapper{
     height: 100%;
+    overflow: hidden;
     background-color: transparent;
-
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
@@ -33,6 +33,6 @@
         color: inherit;
     }
     %btn-icon{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 }
